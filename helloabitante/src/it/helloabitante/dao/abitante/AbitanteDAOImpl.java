@@ -51,6 +51,7 @@ public class AbitanteDAOImpl implements AbitanteDAO {
 	public int update(Abitante input) throws Exception {
 		for (Abitante abitanteItem : DB_Mock.LISTA_ABITANTI) {
 			if (abitanteItem.getIdAbitante().equals(input.getIdAbitante()))
+				input.setIdAbitante(abitanteItem.getIdAbitante());
 				abitanteItem = input;
 
 		}

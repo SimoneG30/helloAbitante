@@ -10,7 +10,6 @@
 	table, th, td {
 	  border: 1px solid black;
 	}
-	
 	th, td {
 	  padding: 10px;
 	}
@@ -31,19 +30,14 @@
 				<th>Motto</th>
 			</tr>
 		</thead>
-		
-		<% Abitante abitanteDaServlet = (Abitante) request.getAttribute("abitanteAttributeNameDettaglio");
-							
-				%>
+		<% Abitante abitanteDaServlet = (Abitante) request.getAttribute("abitanteAttributeNameDettaglio"); %>
 				<tr>
 					<td><%=abitanteDaServlet.getNome() %></td>
 					<td><%=abitanteDaServlet.getCognome() %></td>
 					<td><%=abitanteDaServlet.getCodiceFiscale() %></td>
 					<td><%=abitanteDaServlet.getEta() %> </td>
 					<td><%=abitanteDaServlet.getMottoDiVita() %></td>
-				</tr>
-		
-	
+				</tr>	
 	</table>
 </body>
 </html>
