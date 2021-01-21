@@ -20,8 +20,6 @@
 		<input type="text" name="cognomeInput" id="cognomeInputId">
 		<br><br>
 		<input type="submit" value="CERCA">
-	
 	</form>
-
 </body>
 </html>

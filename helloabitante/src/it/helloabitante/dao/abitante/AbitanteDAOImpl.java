@@ -28,32 +28,48 @@ public class AbitanteDAOImpl implements AbitanteDAO {
 
 	@Override
 	public List<Abitante> list() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		List<Abitante> result = new ArrayList<>();
+
+		for (Abitante abitanteItem : DB_Mock.LISTA_ABITANTI) {
+			result.add(abitanteItem);
+		}
+		return result;
 	}
 
 	@Override
 	public Abitante get(Long id) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		Abitante result = new Abitante();
+
+		for (Abitante abitanteItem : DB_Mock.LISTA_ABITANTI) {
+			if (abitanteItem.getIdAbitante().equals(id))
+				result = abitanteItem;
+		}
+		return result;
 	}
 
 	@Override
 	public int update(Abitante input) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		for (Abitante abitanteItem : DB_Mock.LISTA_ABITANTI) {
+			if (abitanteItem.getIdAbitante().equals(input.getIdAbitante()))
+				abitanteItem = input;
+
+		}
+		return 1;
+
 	}
 
 	@Override
 	public int insert(Abitante input) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		List<Abitante> result = new ArrayList<>();
+		result.add(input);
+		return 1;
 	}
 
 	@Override
 	public int delete(Abitante input) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		List<Abitante> result = new ArrayList<>();
+		result.remove(input);
+		return 1;
 	}
 
 }

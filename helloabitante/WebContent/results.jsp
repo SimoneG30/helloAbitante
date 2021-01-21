@@ -41,6 +41,7 @@
 					<td>
 						<a href="VisualizzaDettaglioServlet?idDaInviareComeParametro=<%=abitanteItem.getIdAbitante() %>">Dettaglio</a>
 						<a href="PreparaModificaServlet?idDaInviareComeParametro=<%=abitanteItem.getIdAbitante() %>">Modifica</a>
+						<a href="PreparaRimozioneServlet?idDaInviareComeParametro=<%=abitanteItem.getIdAbitante() %>">Rimuovi</a>
 					</td>
 				</tr>
 		<%	}%>

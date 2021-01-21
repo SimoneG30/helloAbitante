@@ -29,14 +29,18 @@ public class SearchServlet extends HttpServlet {
 
 		String nomeDaPagina = request.getParameter("nomeInput");
 		String cognomeDaPagina = request.getParameter("cognomeInput");
-
+		
 		if (nomeDaPagina.equals("") && cognomeDaPagina.equals("")) {
 			String messaggioDaInviareAPagina = "Attenzione! E' necessario valorizzare almeno un campo.";
 			request.setAttribute("messaggioDiErrore", messaggioDaInviareAPagina);
 			destinazione = "searchForm.jsp";
 		} else {
-			request.setAttribute("listAbitantiAttributeName",
-					MyServiceFactory.getAbitanteServiceInstance().cercaPerNomeECognome(nomeDaPagina, cognomeDaPagina));
+			try {
+				request.setAttribute("listAbitantiAttributeName",
+						MyServiceFactory.getAbitanteServiceInstance().cercaPerNomeECognome(nomeDaPagina, cognomeDaPagina));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			destinazione = "results.jsp";
 		}
 
