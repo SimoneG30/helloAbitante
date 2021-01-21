@@ -14,7 +14,7 @@
 		Inserire dati da modificare<br>
 	<%}    %>
 	<% Abitante abitanteInPagina = (Abitante)request.getAttribute("abitanteAttributeModifica"); %>
-	<form action=ModificaServlet method="post">
+	<form action="ModificaServlet" method="post">
 		<label for="nomeInputId">NOME:</label><br>
 		<input type="text" name="nomeInput" id="nomeInputId" value="<%=abitanteInPagina.getNome()%>">
 		<br>

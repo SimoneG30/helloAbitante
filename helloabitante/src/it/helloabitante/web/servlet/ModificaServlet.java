@@ -71,7 +71,8 @@ public class ModificaServlet extends HttpServlet {
 				abitanteAggiornato.setMottoDiVita(mottoDaModificare);
 				request.setAttribute("abitanteModificato", MyServiceFactory.getAbitanteServiceInstance().modificaAbitante(abitanteAggiornato));
 			}
-			
+			String updateRiuscito = "Campi modificati correttamente";
+			request.setAttribute("updateRiuscito", updateRiuscito);
 			RequestDispatcher rd = request.getRequestDispatcher(destinazione);
 			rd.forward(request, response);
 			
