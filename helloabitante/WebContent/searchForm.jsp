@@ -22,8 +22,8 @@
 		<input type="submit" value="CERCA">
 	</form>
 	<br>
-<% if(request.getAttribute("updateRiuscito") != null) %>
+<% if(request.getAttribute("updateRiuscito") != null) {%>
 		<p style="color: red;"><%=request.getAttribute("updateRiuscito") %></p>
-
+<%} %>
 </body>
 </html>
