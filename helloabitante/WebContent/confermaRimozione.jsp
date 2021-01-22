@@ -9,7 +9,7 @@
 <title>Conferma rimozione</title>
 
 </head>
-<body style = "font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
+<body style = "background-color:lightblue; font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
 	<center>
 	<h1 style="color:red;">Attenzione! questa azione non può essere annullata</h1>
 		<h3>Sei sicuro di voler elminare questo utente?</h3>

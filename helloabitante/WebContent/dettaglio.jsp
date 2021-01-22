@@ -21,7 +21,7 @@ table, th, td {
 	}
 </style>
 </head>
-<body style = "font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
+<body style = "background-color:lightblue; font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
 	<table class="center">
 		<thead>
 			<tr>

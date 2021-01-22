@@ -25,7 +25,7 @@ th, td {
 
 </head>
 <center>
-<body style = "font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
+<body style = "background-color:lightblue; font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
 	<table class="center">
 		<thead>
 			<tr>
@@ -55,6 +55,7 @@ th, td {
 		%>
 
 	</table>
+	<br>
 	<a href="PreparaAggiuntaServlet">Nuovo abitante</a>
 			</td>
 </center>

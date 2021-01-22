@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Ricerca abitante</title>
 </head>
-<body style = "font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
+<body style = "background-color:lightblue; font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
 <center>
 	<% if(request.getAttribute("messaggioDiErrore") != null){ %>
 		<p style="color: red;"><%=request.getAttribute("messaggioDiErrore") %></p>
@@ -36,7 +36,6 @@
 <%} %>
 <br>
 	<a href="PreparaAggiuntaServlet">Nuovo abitante</a>
-
 </center>
 </body>
 </html>
