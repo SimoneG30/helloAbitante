@@ -7,9 +7,11 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <style type="text/css">
-	table, th, td {
-	  border: 1px solid black;
-	}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
 	th, td {
 	  padding: 10px;
 	}
@@ -19,7 +21,7 @@
 	}
 </style>
 </head>
-<body>
+<body style = "font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
 	<table class="center">
 		<thead>
 			<tr>

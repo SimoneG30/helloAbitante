@@ -7,7 +7,8 @@
 <meta charset="ISO-8859-1">
 <title>Inserimento modifiche abitante</title>
 </head>
-<body>
+<body style = "font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;">
+<center>
 	<% if(request.getAttribute("messaggioDiErrore") != null){ %>
 		<p style="color: red;"><%=request.getAttribute("messaggioDiErrore") %></p>
 	<%  } else { %>
@@ -33,5 +34,7 @@
 		<br><input type="hidden" name="idAbitante" value="<%=abitanteInPagina.getIdAbitante()%>">
 		<input type="submit" value="Conferma">
 	</form>
+	<center>
+	
 </body>
 </html>
