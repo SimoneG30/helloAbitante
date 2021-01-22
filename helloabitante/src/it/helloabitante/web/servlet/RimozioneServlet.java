@@ -41,10 +41,6 @@ public class RimozioneServlet extends HttpServlet {
 				RequestDispatcher rd = request.getRequestDispatcher(destinazione);
 				rd.forward(request, response);
 			}
-			
-
-			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -61,8 +61,9 @@ public class AbitanteDAOImpl implements AbitanteDAO {
 
 	@Override
 	public int insert(Abitante input) throws Exception {
-		List<Abitante> result = new ArrayList<>();
-		result.add(input);
+		Long contatore = (long) DB_Mock.LISTA_ABITANTI.size();
+		input.setIdAbitante(contatore);
+		DB_Mock.LISTA_ABITANTI.add(input);
 		return 1;
 	}
 
@@ -71,7 +72,7 @@ public class AbitanteDAOImpl implements AbitanteDAO {
 
 		for (Abitante abitanteItem : DB_Mock.LISTA_ABITANTI) {
 			if (abitanteItem.getIdAbitante().equals(input.getIdAbitante()))
-				DB_Mock.LISTA_ABITANTI.remove(abitanteItem);
+				DB_Mock.LISTA_ABITANTI.remove(input);
 		}
 		return 1;
 	}

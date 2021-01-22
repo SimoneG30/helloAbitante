@@ -31,6 +31,12 @@
 <% if(request.getAttribute("rimozioneRiuscita") != null) {%>
 		<p style="color: red;"><%=request.getAttribute("rimozioneRiuscita") %></p>
 <%} %>
+<% if(request.getAttribute("aggiuntaRiuscita") != null) {%>
+		<p style="color: red;"><%=request.getAttribute("aggiuntaRiuscita") %></p>
+<%} %>
+<br>
+	<a href="PreparaAggiuntaServlet">Nuovo abitante</a>
+
 </center>
 </body>
 </html>
